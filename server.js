@@ -35,4 +35,6 @@ app.get("/profile/:id", (req, res) => {
 app.put("/image", (req, res) => {
   image.handleImage(req, res, postgres);
 });
-app.listen(3000);
+app.listen(3000, ()=> {
+  console.log('app is running on port 3000');
+})
