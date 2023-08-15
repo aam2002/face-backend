@@ -3,7 +3,7 @@ const porfile = (req, res , postgres) => {
     let found = false;
     postgres
       .select("*")
-      .from("user")
+      .from("users")
       .where({
         id: id,
       })

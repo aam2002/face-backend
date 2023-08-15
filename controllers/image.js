@@ -1,6 +1,6 @@
 const image=(req, res , postgres) => {
     const { id } = req.body;
-    postgres("user")
+    postgres("users")
       .where("id", "=", id)
       .increment("entries", 1)
       .returning("entries")
