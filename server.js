@@ -11,13 +11,13 @@ const image = require("./controllers/image");
 const postgres = knex({
   client: "pg",
   connection: {
-    connectionString:process.env.DATABASE_URL,
+    connectionString:`dpg-cjd69lbbq8nc738ml0kg-a.oregon-postgres.render.com`,
     ssl:{rejectUnauthorized:false},
-    host: process.env.DATABASE_HOST,
+    host: `dpg-cjd69lbbq8nc738ml0kg-a`,
     port: 5432,
-    user: process.env.DATABASE_USER,
-    password: process.env.DATABASE_PASS,
-    database: process.env.DATABASE_DB,
+    user: `database_gre6_user`,
+    password: `7JrJNtSDe8Mwr9krTVFRTPpxxo0jOzt2`,
+    database: `database_gre6`,
   },
 });
 
