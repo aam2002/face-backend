@@ -12,7 +12,7 @@ const signin = (req, res ,postgres , bcrypt) => {
         if (isValid) {
           return postgres
             .select("*")
-            .from("users")
+            .from("user")
             .where("email", "=", email)
             .then((user) => {
               res.json(user[0]);
